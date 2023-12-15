@@ -1,1 +1,43 @@
 @import 'general';
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div{
+        font-family: $title-font-stack;
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        font-size: 15px;
+        font-family: $main-font-stack;
+        li{
+            a{
+                text-decoration: none;
+                padding: 10px;
+                color: rgb(119, 118, 118);
+            }
+            #selected{
+                    color: black;
+            }
+            hr{
+                margin: 2px 15px;
+                border: 0.5px solid black;
+            }
+            a:hover, 
+            a:active{
+                color: black;
+            }
+        }
+
+        
+    }
+}
+

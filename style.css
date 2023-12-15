@@ -1,5 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Public+Sans:wght@500&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header div {
+  font-family: "Great Vibes", sans-serif;
+  font-size: 20px;
+  margin: 10px;
+}
+header ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  font-size: 15px;
+  font-family: "Public Sans", sans-serif;
+}
+header ul li a {
+  text-decoration: none;
+  padding: 10px;
+  color: rgb(119, 118, 118);
+}
+header ul li #selected {
+  color: black;
+}
+header ul li hr {
+  margin: 2px 15px;
+  border: 0.5px solid black;
+}
+header ul li a:hover,
+header ul li a:active {
+  color: black;
 }/*# sourceMappingURL=style.css.map */
