@@ -1,14 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Slabo+27px&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;800&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-@media screen and (max-width: 425px) {
-  body .first-image {
-    width: 85vw;
+@media screen and (max-width: 1024px) {
+  body main {
+    width: 90vw;
+  }
+  body main .row-one {
+    flex-direction: column;
+  }
+  body main .row-one .image {
+    width: 300px;
+  }
+  body main .row-one .title {
+    margin-top: 10px;
+  }
+  body main .row-two {
+    flex-direction: column;
+    margin: 20px 10px;
+  }
+  body main .row-two div {
+    margin: 10px 0;
+  }
+  body main .row-two div:first-child {
+    width: 100%;
+  }
+  body main .row-two .quote {
+    width: 100%;
   }
 }
 header {
@@ -27,7 +49,7 @@ header ul {
   flex-direction: row;
   margin-top: 10px;
   font-size: 16px;
-  font-family: "Slabo 27px", sans-serif;
+  font-family: "Noto Serif", sans-serif;
 }
 header ul li a {
   text-decoration: none;
@@ -54,21 +76,101 @@ main .introduction {
   font-family: "Slabo 27px", sans-serif;
   font-size: 20px;
 }
-main div {
-  text-align: right;
-  font-family: "Permanent Marker", sans-serif;
+main .row-one {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
-main div .titol {
+main .row-one div {
+  font-family: "Noto Serif", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .row-one div .title {
   font-size: 40px;
-  margin-top: 100px;
+  padding: 0 10px;
 }
-main div p.subtitol {
-  font-weight: 300;
+main .row-one div .subtitle {
+  padding: 0 10px;
 }
-main .image {
+main .row-one .image {
   width: 500px;
-  margin: 0 auto;
+  margin: 0 30px;
 }
-main .image img {
+main .row-one .image img {
   width: 100%;
+  border-radius: 5px;
+}
+main .row-two {
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .row-two div:first-child {
+  width: 40%;
+  font-family: "Noto Serif", sans-serif;
+}
+main .row-two div:first-child button {
+  background-color: white;
+  border-color: black;
+  border-radius: 8px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+}
+main .row-two div:first-child button a {
+  color: black;
+  text-decoration: none;
+}
+main .row-two div:first-child button:link, main .row-two div:first-child button:hover {
+  background-color: rgb(240, 240, 240);
+}
+main .row-two div:first-child span:first-child {
+  display: block;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+main .row-two .quote {
+  font-family: "Noto Serif", sans-serif;
+  margin-left: 10px;
+  width: 50%;
+}
+main .row-two .quote :first-child {
+  font-size: 30px;
+  margin-left: 10px;
+}
+main .row-two .quote :last-child {
+  color: rgb(94, 93, 93);
+}
+
+footer {
+  width: 85vw;
+  margin: 100px auto;
+}
+footer p {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+footer div.social {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 120px;
+  flex-wrap: wrap;
+}
+footer div.social span {
+  margin: 5px;
+  color: rgb(126, 126, 126);
+}
+footer div.social span a {
+  text-decoration: none;
+  color: rgb(126, 126, 126);
+}
+footer div.social span:hover a {
+  color: rgb(94, 94, 94);
 }/*# sourceMappingURL=style.css.map */

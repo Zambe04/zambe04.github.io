@@ -18,7 +18,7 @@ header{
         flex-direction: row;
         margin-top: 10px;
         font-size: 16px;
-        font-family: $main-font-stack;
+        font-family: $secondary-font-stack;
         li{
             a{
                 text-decoration: none;
@@ -48,25 +48,112 @@ main{
         font-family: $main-font-stack;
         font-size: 20px;
     }
-    div{
-        text-align: right;
-        font-family: $title-font-stack;
+    .row-one{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        div{
+            font-family: $secondary-font-stack;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
 
-        .titol{
-            font-size: 40px;
-            margin-top: 100px;
+            .title{
+                font-size: 40px;
+                padding: 0 10px;
+            }
+            .subtitle{
+                padding: 0 10px;
+            }
         }
-        p.subtitol{
-            font-weight: 300;
+        .image{
+            width: 500px;
+            margin: 0 30px;
+            img{
+                width: 100%;
+                border-radius: 5px;
+            }
         }
     }
-    .image{
+    .row-two{
+        margin: 30px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        div:first-child{
+            width: 40%;
+            font-family: $secondary-font-stack;
+
+            button {
+                background-color: white;
+                border-color: black;
+                border-radius: 8px;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin-top: 10px;
+
+                a{
+                    color: black;
+                    text-decoration: none;
+                }
+            }
+            button:link, button:hover{
+                background-color: rgb(240, 240, 240);
+            }
+
+            span:first-child{
+                display: block;
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
+        }
+
+        .quote{
+            font-family: $secondary-font-stack;
+            margin-left: 10px;
+            width: 50%;
+
+            :first-child{
+                font-size: 30px;
+                margin-left: 10px;
+            }
+            :last-child{
+                color: rgb(94, 93, 93);
+            }
+        }
+    }
+}
+footer{
+    width: 85vw;
+    margin: 100px auto;
+    p{
+        margin-bottom: 20px; 
+        font-size: 20px;    
+    }
+
+    div.social{
+        display: flex;
+        flex-direction: column;
         width: 500px;
-        margin: 0 auto;
-        img{
-            width: 100%;
+        height: 120px;
+        flex-wrap: wrap;
+
+        span{
+
+            margin: 5px;
+            color: rgb(126, 126, 126);
+            a{
+                text-decoration: none;
+                color: rgb(126, 126, 126);
+            }
+        }
+        span:hover a{
+            color: rgb(94, 94, 94);
         }
     }
-
 }
 

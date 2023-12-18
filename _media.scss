@@ -1,7 +1,31 @@
-@media screen and (max-width: 425px){
+@media screen and (max-width: 1024px){
     body{
-        .first-image{
-            width: 85vw;
+        main{
+            width: 90vw;
+            .row-one{
+                flex-direction: column;
+
+                .image{
+                    width: 300px;
+                }
+                .title{
+                    margin-top: 10px;
+                }
+            }
+            .row-two{
+                flex-direction: column;
+                margin: 20px 10px;
+                div{
+                    margin: 10px 0;
+                }
+                div:first-child{
+                    width: 100%;
+                }
+                .quote{
+                    width: 100%;
+                }
+            }
         }
+        
     }
 }
