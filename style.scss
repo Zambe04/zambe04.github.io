@@ -1,4 +1,5 @@
 @import 'general';
+@import 'media';
 
 header{
     display: flex;
@@ -6,7 +7,7 @@ header{
     align-items: center;
 
     div{
-        font-family: $title-font-stack;
+        font-family: $name-font-stack;
         font-size: 20px;
         margin: 10px;
     }
@@ -16,7 +17,7 @@ header{
         display: flex;
         flex-direction: row;
         margin-top: 10px;
-        font-size: 15px;
+        font-size: 16px;
         font-family: $main-font-stack;
         li{
             a{
@@ -36,8 +37,36 @@ header{
                 color: black;
             }
         }
-
-        
     }
+}
+
+main{
+    width: 85vw;
+    margin: 100px auto;
+
+    .introduction{
+        font-family: $main-font-stack;
+        font-size: 20px;
+    }
+    div{
+        text-align: right;
+        font-family: $title-font-stack;
+
+        .titol{
+            font-size: 40px;
+            margin-top: 100px;
+        }
+        p.subtitol{
+            font-weight: 300;
+        }
+    }
+    .image{
+        width: 500px;
+        margin: 0 auto;
+        img{
+            width: 100%;
+        }
+    }
+
 }
 
