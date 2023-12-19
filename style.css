@@ -32,7 +32,68 @@
   body main .row-two .quote {
     width: 100%;
   }
+  body .cv-content {
+    flex-direction: column;
+  }
+  body .cv-content .text {
+    width: 100%;
+  }
+  body .cv-content img {
+    margin-top: 20px;
+  }
+  body .cv-content .fourth {
+    margin: 0 15px;
+  }
 }
+.cv-content {
+  width: 85vw;
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+  font-family: "Noto Serif", sans-serif;
+}
+.cv-content .section {
+  margin: 15px;
+}
+.cv-content .section-title {
+  font-size: 25px;
+  margin: 10px 0;
+  background-color: rgb(255, 244, 226);
+}
+.cv-content .text {
+  width: 50%;
+}
+.cv-content .text .main-title {
+  display: inline;
+  font-size: 30px;
+}
+.cv-content .text span {
+  color: rgb(119, 118, 118);
+  font-size: 13px;
+  margin-left: 10px;
+}
+.cv-content .text p.second-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+.cv-content .text .second ul, .cv-content .text .third ul, .cv-content .text .school-grades ul {
+  margin: 10px;
+}
+.cv-content .text .second ul li, .cv-content .text .third ul li, .cv-content .text .school-grades ul li {
+  padding: 2px;
+}
+.cv-content .text .second ul {
+  list-style-type: square;
+}
+.cv-content img {
+  width: 450px;
+  height: 450px;
+  border-radius: 5px;
+}
+.cv-content .fourth {
+  margin: 55px 0;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -93,6 +154,7 @@ main .row-one div .title {
 }
 main .row-one div .subtitle {
   padding: 0 10px;
+  background-color: rgb(255, 244, 226);
 }
 main .row-one .image {
   width: 500px;
@@ -113,8 +175,8 @@ main .row-two div:first-child {
   font-family: "Noto Serif", sans-serif;
 }
 main .row-two div:first-child button {
-  background-color: white;
-  border-color: black;
+  background-color: rgb(252, 236, 211);
+  border-color: rgb(252, 236, 211);
   border-radius: 8px;
   padding: 15px 32px;
   text-align: center;
@@ -125,10 +187,11 @@ main .row-two div:first-child button {
 }
 main .row-two div:first-child button a {
   color: black;
+  font-weight: 600;
   text-decoration: none;
 }
 main .row-two div:first-child button:link, main .row-two div:first-child button:hover {
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(248, 227, 193);
 }
 main .row-two div:first-child span:first-child {
   display: block;
@@ -145,7 +208,7 @@ main .row-two .quote :first-child {
   margin-left: 10px;
 }
 main .row-two .quote :last-child {
-  color: rgb(94, 93, 93);
+  color: rgb(119, 118, 118);
 }
 
 footer {
@@ -165,12 +228,12 @@ footer div.social {
 }
 footer div.social span {
   margin: 5px;
-  color: rgb(126, 126, 126);
+  color: rgb(119, 118, 118);
 }
 footer div.social span a {
   text-decoration: none;
-  color: rgb(126, 126, 126);
+  color: rgb(119, 118, 118);
 }
 footer div.social span:hover a {
-  color: rgb(94, 94, 94);
+  color: rgb(119, 118, 118);
 }/*# sourceMappingURL=style.css.map */

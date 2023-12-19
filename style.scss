@@ -1,11 +1,11 @@
 @import 'general';
 @import 'media';
+@import 'cv';
 
 header{
     display: flex;
     flex-direction: column;
     align-items: center;
-
     div{
         font-family: $name-font-stack;
         font-size: 20px;
@@ -23,7 +23,7 @@ header{
             a{
                 text-decoration: none;
                 padding: 10px;
-                color: rgb(119, 118, 118);
+                color: $secondary-color;
             }
             #selected{
                     color: black;
@@ -64,6 +64,7 @@ main{
             }
             .subtitle{
                 padding: 0 10px;
+                background-color: rgb(255, 244, 226);
             }
         }
         .image{
@@ -86,8 +87,8 @@ main{
             font-family: $secondary-font-stack;
 
             button {
-                background-color: white;
-                border-color: black;
+                background-color: rgb(252, 236, 211);
+                border-color: rgb(252, 236, 211);
                 border-radius: 8px;
                 padding: 15px 32px;
                 text-align: center;
@@ -98,11 +99,12 @@ main{
 
                 a{
                     color: black;
+                    font-weight: 600;
                     text-decoration: none;
                 }
             }
             button:link, button:hover{
-                background-color: rgb(240, 240, 240);
+                background-color:rgb(248, 227, 193);
             }
 
             span:first-child{
@@ -122,7 +124,7 @@ main{
                 margin-left: 10px;
             }
             :last-child{
-                color: rgb(94, 93, 93);
+                color: $secondary-color;
             }
         }
     }
@@ -145,14 +147,14 @@ footer{
         span{
 
             margin: 5px;
-            color: rgb(126, 126, 126);
+            color: $secondary-color;
             a{
                 text-decoration: none;
-                color: rgb(126, 126, 126);
+                color: $secondary-color;
             }
         }
         span:hover a{
-            color: rgb(94, 94, 94);
+            color: $secondary-color;
         }
     }
 }

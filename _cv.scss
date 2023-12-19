@@ -1,0 +1,55 @@
+.cv-content{
+    width: 85vw;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    font-family: $secondary-font-stack;
+
+    .section{
+        margin: 15px;
+    }
+    .section-title{
+        font-size: 25px;
+        margin: 10px 0;
+        background-color: rgb(255, 244, 226);
+    }
+
+    .text{
+        width: 50%;
+
+        .main-title{
+            display: inline;
+            font-size: 30px;
+        }
+        span{
+            color: $secondary-color;
+            font-size: 13px;
+            margin-left: 10px;
+        }
+        p.second-title{
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .second, .third, .school-grades{
+            ul{
+                margin: 10px;
+                li{
+                    padding: 2px;
+                }
+            }
+        }
+        .second{
+            ul{
+                list-style-type: square;
+            }
+        }
+    }
+    img{
+        width: 450px;
+        height: 450px;
+        border-radius: 5px;
+    }
+    .fourth{
+        margin: 55px 0;
+    }
+}

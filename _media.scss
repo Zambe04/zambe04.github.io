@@ -26,6 +26,19 @@
                 }
             }
         }
+
+        .cv-content{
+            flex-direction: column;
+            .text{
+                width: 100%;
+            }
+            img{
+                margin-top: 20px;
+            }
+            .fourth{
+                margin: 0 15px;
+            }
+        }
         
     }
 }
