@@ -44,6 +44,20 @@
   body .cv-content .fourth {
     margin: 0 15px;
   }
+  body .whoami-content p {
+    width: 100%;
+  }
+  body .whoami-content .passions {
+    flex-direction: column;
+  }
+  body .whoami-content .passions .one {
+    width: 100%;
+    margin-right: 0;
+  }
+  body .whoami-content .passions .two {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 .cv-content {
   width: 85vw;
@@ -92,6 +106,38 @@
 }
 .cv-content .fourth {
   margin: 55px 0;
+}
+
+.whoami-content {
+  font-family: "Noto Serif", sans-serif;
+}
+.whoami-content p {
+  width: 45%;
+  margin: 40px auto;
+  text-align: center;
+  font-size: 25px;
+}
+.whoami-content .passions {
+  display: flex;
+  justify-content: space-between;
+}
+.whoami-content .passions .title {
+  background-color: rgb(255, 244, 226);
+  width: 100%;
+}
+.whoami-content .passions .one {
+  width: 40%;
+  margin-right: 40px;
+}
+.whoami-content .passions .one img {
+  width: 100%;
+}
+.whoami-content .passions .two {
+  width: 60%;
+  margin-left: 40px;
+}
+.whoami-content .passions .two img {
+  width: 100%;
 }
 
 header {
@@ -175,8 +221,7 @@ main .row-two div:first-child {
   font-family: "Noto Serif", sans-serif;
 }
 main .row-two div:first-child button {
-  background-color: rgb(252, 236, 211);
-  border-color: rgb(252, 236, 211);
+  background-color: black;
   border-radius: 8px;
   padding: 15px 32px;
   text-align: center;
@@ -186,12 +231,12 @@ main .row-two div:first-child button {
   margin-top: 10px;
 }
 main .row-two div:first-child button a {
-  color: black;
+  color: white;
   font-weight: 600;
   text-decoration: none;
 }
 main .row-two div:first-child button:link, main .row-two div:first-child button:hover {
-  background-color: rgb(248, 227, 193);
+  background-color: rgb(32, 32, 32);
 }
 main .row-two div:first-child span:first-child {
   display: block;

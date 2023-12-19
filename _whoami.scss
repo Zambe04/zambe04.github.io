@@ -1,0 +1,33 @@
+.whoami-content{
+    font-family: $secondary-font-stack;
+    p{
+        width: 45%;
+        margin: 40px auto;
+        text-align: center;
+        font-size: 25px;
+    }
+    .passions{
+        display: flex;
+        justify-content: space-between;
+
+        .title{
+            background-color: rgb(255, 244, 226);
+            width: 100%;
+        }
+
+        .one{
+            width: 40%;
+            margin-right: 40px;
+            img{
+                width: 100%;
+            }
+        }
+        .two{
+            width: 60%;
+            margin-left: 40px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

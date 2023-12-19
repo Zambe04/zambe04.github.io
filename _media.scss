@@ -39,6 +39,24 @@
                 margin: 0 15px;
             }
         }
+
+        .whoami-content{
+            p{
+                width: 100%;
+            }
+            .passions{
+                flex-direction: column;
+
+                .one{
+                    width: 100%;
+                    margin-right: 0;
+                }
+                .two{
+                    width: 100%;
+                    margin-left: 0;
+                }
+            }
+        }
         
     }
 }
