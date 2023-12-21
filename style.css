@@ -132,12 +132,26 @@
 .whoami-content .passions .one img {
   width: 100%;
 }
+.whoami-content .passions .one .content p:last-child {
+  text-align: center;
+}
+.whoami-content .passions .passion div {
+  padding: 5px;
+}
+.whoami-content .passions .passion div p {
+  width: 100%;
+  font-size: 20px;
+  text-align: left;
+}
 .whoami-content .passions .two {
   width: 60%;
   margin-left: 40px;
 }
 .whoami-content .passions .two img {
   width: 100%;
+}
+.whoami-content .passions .two div span {
+  background-color: rgb(255, 244, 226);
 }
 
 header {

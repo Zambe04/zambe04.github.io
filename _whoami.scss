@@ -21,12 +21,32 @@
             img{
                 width: 100%;
             }
+            .content{
+                p:last-child{
+                    text-align: center;
+                }
+            }
+        }
+        .passion{
+            div{
+                padding: 5px;
+                p{
+                    width: 100%;
+                    font-size: 20px;
+                    text-align: left;
+                }
+            }
         }
         .two{
             width: 60%;
             margin-left: 40px;
             img{
                 width: 100%;
+            }
+            div{
+                span{
+                    background-color:  rgb(255, 244, 226);
+                }
             }
         }
     }
