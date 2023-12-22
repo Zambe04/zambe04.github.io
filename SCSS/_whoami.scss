@@ -3,8 +3,23 @@
     p{
         width: 45%;
         margin: 40px auto;
+        margin-bottom: 10px;
         text-align: center;
         font-size: 25px;
+    }
+    .further-information{
+        margin: auto;
+        margin-bottom: 10px;
+        font-size: 15px;
+        color: $secondary-color;
+
+        a{
+            color: $secondary-color;
+            text-decoration: none;
+        }
+        a:hover{
+            color: black;
+        }
     }
     .passions{
         display: flex;
