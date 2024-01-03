@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Slabo+27px&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Slabo+27px&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;800&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -320,4 +322,62 @@ footer div.social span a {
 }
 footer div.social span:hover a {
   color: rgb(119, 118, 118);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  body main {
+    width: 90vw;
+  }
+  body main .row-one {
+    flex-direction: column;
+    align-items: center;
+  }
+  body main .row-one .title {
+    margin-top: 10px;
+  }
+  body main .row-two {
+    flex-direction: column;
+    margin: 20px 10px;
+  }
+  body main .row-two div {
+    margin: 10px 0;
+  }
+  body main .row-two div:first-child {
+    width: 100%;
+  }
+  body main .quote {
+    width: 100%;
+  }
+  body .cv-content {
+    flex-direction: column;
+  }
+  body .cv-content .text {
+    width: 100%;
+  }
+  body .cv-content img {
+    margin-top: 20px;
+  }
+  body .cv-content .fourth {
+    margin: 0 15px;
+  }
+  body .whoami-content p {
+    width: 100%;
+  }
+  body .whoami-content .passions {
+    flex-direction: column;
+  }
+  body .whoami-content .passions .one {
+    width: 100%;
+    margin-right: 0;
+  }
+  body .whoami-content .passions .two {
+    width: 100%;
+    margin-left: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
